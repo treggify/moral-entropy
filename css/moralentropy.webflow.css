@@ -134,6 +134,10 @@ p {
   text-decoration: line-through;
 }
 
+.navlink.w--current {
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
 .navcontainer {
   display: -webkit-box;
   display: -webkit-flex;

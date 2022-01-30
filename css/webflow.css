@@ -296,8 +296,8 @@ fieldset {
   border: 0;
 }
 button,
-html input[type="button"],
-input[type="reset"] {
+html input[type='button'],
+input[type='reset'] {
   border: 0;
   cursor: pointer;
   -webkit-appearance: button;
@@ -895,9 +895,6 @@ textarea.w-select {
 .w-widget-twitter-count-shim.w--vertical.w--large {
   width: 76px;
 }
-.w-widget-gplus {
-  overflow: hidden;
-}
 .w-background-video {
   position: relative;
   overflow: hidden;
@@ -999,6 +996,13 @@ textarea.w-select {
 .w-slider-dot.w-active {
   background-color: #fff;
 }
+.w-slider-dot:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #fff;
+}
+.w-slider-dot:focus.w-active {
+  box-shadow: none;
+}
 .w-slider-arrow-left,
 .w-slider-arrow-right {
   position: absolute;
@@ -1019,11 +1023,15 @@ textarea.w-select {
   -ms-user-select: none;
   user-select: none;
 }
-.w-slider-arrow-left [class^="w-icon-"],
-.w-slider-arrow-right [class^="w-icon-"],
-.w-slider-arrow-left [class*=" w-icon-"],
-.w-slider-arrow-right [class*=" w-icon-"] {
+.w-slider-arrow-left [class^='w-icon-'],
+.w-slider-arrow-right [class^='w-icon-'],
+.w-slider-arrow-left [class*=' w-icon-'],
+.w-slider-arrow-right [class*=' w-icon-'] {
   position: absolute;
+}
+.w-slider-arrow-left:focus,
+.w-slider-arrow-right:focus {
+  outline: 0;
 }
 .w-slider-arrow-left {
   z-index: 3;
@@ -1042,6 +1050,19 @@ textarea.w-select {
   margin: auto;
   width: 1em;
   height: 1em;
+}
+.w-slider-aria-label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.w-slider-force-show {
+  display: block !important;
 }
 .w-dropdown {
   display: inline-block;

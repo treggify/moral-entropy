@@ -636,6 +636,10 @@
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 
   .info {
@@ -682,6 +686,10 @@
     line-height: 16px;
   }
 
+  .image-7 {
+    margin-bottom: 16px;
+  }
+
   .albumart {
     width: 100%;
   }
@@ -700,6 +708,10 @@
     flex-direction: column-reverse;
   }
 
+  .container.releasescontainer {
+    padding-bottom: 40px;
+  }
+
   .container.releasescontainer.linkpage {
     padding-right: 24px;
     padding-left: 24px;
@@ -713,9 +725,11 @@
     width: 100%;
     margin-right: 0px;
     margin-bottom: 24px;
+    margin-left: 0px;
   }
 
   .releasewrap {
+    margin-left: 0px;
     padding-bottom: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -782,6 +796,10 @@
     background-image: url('../images/noCrop.png');
     background-position: 50% 0%;
     background-size: cover;
+  }
+
+  .image-7 {
+    margin-bottom: 16px;
   }
 
   .fullwrap {
